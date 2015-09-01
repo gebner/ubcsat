@@ -20,7 +20,9 @@
 
 */
 
-#define LITTYPE unsigned long
+#include <stdint.h>
+
+#define LITTYPE uint32_t
 
 #define GetTrueLit(V) (((V) << 1) + 1 - aVarValue[V])
 #define GetFalseLit(V) (((V) << 1) + aVarValue[V])

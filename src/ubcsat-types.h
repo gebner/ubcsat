@@ -20,6 +20,8 @@
 
 */
 
+#include <stdint.h>
+
 /* Column Statistic Fields */
 
 #define STATCODE_all          0xFFFFFFFF
@@ -64,20 +66,20 @@
 
 #define FLOATSTATSMIN (1E-8)
 
-#define PROBABILITY unsigned long
+#define PROBABILITY uint32_t
 
 #ifndef BOOL
-#define BOOL unsigned long
+#define BOOL uint32_t
 #endif
 
 #ifndef UINT32
-#define UINT32 unsigned long
+#define UINT32 uint32_t
 #endif
 
 #define UINT32MAX 0xFFFFFFFF
 
 #ifndef SINT32
-#define SINT32 signed long
+#define SINT32 int32_t
 #endif
 
 #define SINT32MAX 0x7FFFFFFF
